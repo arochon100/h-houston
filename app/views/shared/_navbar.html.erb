@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to root_path do %>
+        <%= image_tag "rocket_1.png", data: { turbolinks: false } %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+<%# ******************************** LISTE "UL" ******************************* %>   
+      <ul class="navbar-nav">
+         
+
+<%# ******************************** PRÉSANTATION ******************************* %>
+        <li class="nav-item">
+           <%= link_to "Prestataires", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+<%# ******************************** LEARNINGS 2 À 6 ANS ******************************* %>
+        <li class="nav-item">
+           <%= link_to "Écoles", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+<%# ******************************** DEÉVELOPPEMENT DE L'ENFANT ******************************* %>
+        <li class="nav-item">
+          <%= link_to "Neurosciences", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+<%# ******************************** BOOSTERS DE L'APPRENTISSAGE ******************************* %>
+        <li class="nav-item">
+          <%= link_to "Méthodes", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+<%# ******************************** BOOSTERS DE L'APPRENTISSAGE ******************************* %>
+        <li class="nav-item">
+          <%= link_to "Actualités", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+
+      </ul>
+<%# ******************************** LISTE "UL" ******************************* %>   
+
+
+
+    </div>
+  </div>
+</nav>
