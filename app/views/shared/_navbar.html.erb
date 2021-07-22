@@ -12,27 +12,53 @@
       <ul class="navbar-nav">
          
 
-<%# ******************************** PRÉSANTATION ******************************* %>
+<%# ******************************** PRESTATAIRES ******************************* %>
         <li class="nav-item">
            <%= link_to "Prestataires", root_path, class: "nav-link" , data: { turbolinks: false } %>
         </li>
 
-<%# ******************************** LEARNINGS 2 À 6 ANS ******************************* %>
+<%# ******************************** BOÎTE À IDÉES ******************************* %>
+        <li class="nav-item">
+           <%= link_to "Boîte à idées", root_path, class: "nav-link" , data: { turbolinks: false } %>
+        </li>
+
+
+<%# ******************************** ÉCOLES ******************************* %>
         <li class="nav-item">
            <%= link_to "Écoles", root_path, class: "nav-link" , data: { turbolinks: false } %>
         </li>
 
-<%# ******************************** DEÉVELOPPEMENT DE L'ENFANT ******************************* %>
-        <li class="nav-item">
-          <%= link_to "Neurosciences", root_path, class: "nav-link" , data: { turbolinks: false } %>
+
+
+<%# ******************************** NEUROSCIENCES ******************************* %>
+<li class="nav-item dropdown">
+          <%# <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a> %>
+          <%= link_to "Neurosciences", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", "role" => "button", "data-bs-toggle" => "dropdown", "aria-expanded" => "false" , data: { turbolinks: false } %>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Le jeu</a></li>
+            <li><a class="dropdown-item" href="#">Les 4 piliers de l'apprentissage</a></li>
+            <li><a class="dropdown-item" href="#">Les activités recommandées</a></li>
+            <li><a class="dropdown-item" href="#">Les fantastiques</a></li>
+          </ul>
         </li>
 
-<%# ******************************** BOOSTERS DE L'APPRENTISSAGE ******************************* %>
-        <li class="nav-item">
-          <%= link_to "Méthodes", root_path, class: "nav-link" , data: { turbolinks: false } %>
+<%# ******************************** MÉTHODES ******************************* %>
+<li class="nav-item dropdown">
+          <%# <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a> %>
+          <%= link_to "Méthodes", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", "role" => "button", "data-bs-toggle" => "dropdown", "aria-expanded" => "false" , data: { turbolinks: false } %>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Méthode de Singapour</a></li>
+            <li><a class="dropdown-item" href="#">Montessori</a></li>
+            <li><a class="dropdown-item" href="#">Mathador</a></li>
+          </ul>
         </li>
 
-<%# ******************************** BOOSTERS DE L'APPRENTISSAGE ******************************* %>
+
+<%# ******************************** ACTUALITÉS ******************************* %>
         <li class="nav-item">
           <%= link_to "Actualités", root_path, class: "nav-link" , data: { turbolinks: false } %>
         </li>

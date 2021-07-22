@@ -1,0 +1,131 @@
+
+
+
+// BANNER > HOME > CONTAINER
+
+.banner-home {
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-home  {
+    height: 450px;
+  }
+} 
+
+
+// BANNER > HOME > CONTAINER > H1
+
+
+.banner-home-h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-home-h1  {
+    font-size: 35px;
+  }
+} 
+
+
+// BANNER > HOME > CONTAINER > H2
+
+.banner-home-h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color:#ccecfa;
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen  
+and (min-width: 768px)
+and (max-width: 1099px)
+{
+    .banner-home-h2  {
+        width: 730px;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+  .banner-home-h2  {
+    font-size: 30px;
+    width: 1000px;
+  }
+} 
+
+// BANNER > HOME > CONTAINER > H2
+
+
+
+.banner-home-h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+
+@media only screen  
+and (min-width: 768px)
+and (max-width: 1099px)
+{
+    .banner-home-h3   {
+        width: 730px;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+  .banner-home-h3  {
+    font-size: 20px;
+    width: 1000px;
+  }
+} 
+
+ 
+
+
+// BANNER > PRESTATAIRES 
+
+
+
+.banner-prestataires {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-prestataires  {
+    height: 600px;
+  }
+} 

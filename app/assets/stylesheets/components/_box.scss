@@ -1,0 +1,71 @@
+
+
+// BOX > HOME
+.box-home {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    // margin-right: 15px;
+    // margin-left: 15px;
+    margin-bottom: 10px;
+    border: solid 3px #11689e;
+}
+
+@media screen and (min-width: 992px) {
+  .box-home {
+    height: 200px;
+  }
+} 
+
+
+.box-home p {
+    margin-bottom: 0px;
+    // color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .box-home p{
+    font-size: 20px !important;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+} 
+
+.title-box-home {
+    font-size: 40px !important;
+    font-weight: 700 !important;
+    color: #03bddf !important;
+}
+
+@media screen and (min-width: 992px) {
+  .title-box-home {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+  }
+} 
+
+.box-home-picto {
+  margin-top: 15px;
+}
+
+// BOX >  LIENS
+.box-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.box-link {
+    text-decoration: none;
+}

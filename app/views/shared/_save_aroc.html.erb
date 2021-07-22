@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+<%# ? => LINK_TO : INTRODUIRE DES CUSTOM ATTRIBUTES  %>
+<%# ? => LINK_TO : INTRODUIRE DES CUSTOM ATTRIBUTES  %>
+<li class="nav-item dropdown">
+          <%# <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a> %>
+          <%= link_to "Prestataires", root_path, class: "nav-link dropdown-toggle", id: "navbarDropdown", "role" => "button", "data-bs-toggle" => "dropdown", "aria-expanded" => "false" , data: { turbolinks: false } %>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Près de chez moi</a></li>
+          </ul>
+        </li>

@@ -2,13 +2,95 @@
 <%# TITLE %>
 <% @title="Apprentissages par le jeu et écoles pour les 2 à 15 ans | Hello Houston Learnings" %>
 
+
+
 <%# DESCRIPTION %>
 <% content_for :head do %>
     <meta name="description" content="Les apprentissages par le jeu pour les enfants...">
 <% end %>
 
-<%# NAVBAR %>
-  <%= render 'shared/navbar' %> 
 
 
-<p class="color">test</p>
+
+
+
+
+<%# BANNER %>
+<div class="banner-home" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<%= asset_path 'banner_tree_2.jpg' %>); position:relative;">
+                
+                <h1 class="banner-home-h1">HELLO HOUSTON LEARNINGS</h1> 
+                <h2 class="banner-home-h2" >Trouver les meilleurs prestataires d'apprentissages (club, association, école...)
+                près de chez vous pour vos enfants de 2 à 15 ans.</h2>
+               
+                <%# <h3>Trouver un apprentissage pour votre enfant !</h3> %>
+                <h3 class="banner-home-h3" >La boîte à idées des apprentissages, les méthodes  qui ont fait leurs preuves
+                 et les enseignements des neurosciences aux services de l'épanouissement et de la réussite de vos enfants.  </h3>
+                <%# <h2 style="margin-bottom:0px">DATE DE LANCEMENT : FÉVRIER 2021</h2>  %>
+                <%= link_to "TROUVER MON PRESTATAIRES D'APPRENTISSAGES", prestataires_apprentissages_path, class: "btn btn-primary", :style=> 'margin-top: 15px; background-color: #03bddf !important; font-weight: bolder;' , data: { turbolinks: false } %>
+                <%# <a href="" class="btn btn-primary" style="margin-top: 15px">TROUVER MON PRESTATAIRES D'APPRENTISSAGES</a> %>
+
+</div>
+
+
+
+<%# ACTIVITIES %>
+<div class="container container-activites">
+  <div class="row">
+    <div class="col-12">
+      <img src="<%= asset_path 'activities.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+<%# BLOCKS %>
+<div class="container">
+    <div class="row">
+
+
+<%# BLOCK 1 => PRESTATAIRES D'APPRENTISSAGES %>
+        <div class="col-md-12 col-lg-4">
+            <%= link_to prestataires_apprentissages_path, class: "box-link", data: { turbolinks: false } , :action => 'go' do %>
+                <div class="box-home"  >
+                    <div class="box-home-picto">
+                      <%= image_tag("home-geolocalisation-picto.png", class: "img-fluid img-motricite img-nature") %>
+                    </div>
+                    <p class="title-box-home">PRESTATAIRES</p>
+                    <p>Trouver un prestataire d'apprentissage près de chez moi !</p>
+                </div>
+            <% end %>
+        </div>
+
+
+<%# BLOCK 2 => BOÎTE À IDÉES %>
+        <div class="col-md-12 col-lg-4">
+            <%= link_to root_path, class: "box-link", data: { turbolinks: false } , :action => 'go' do %>
+            <div class="box-home"  >
+              <div class="box-home-picto">
+                <%= image_tag("home-idee-picto.png", class: "img-fluid img-motricite img-nature") %>
+              </div>
+                <p class="title-box-home">LA BOÎTE À IDÉES</p>
+                <p>Le salon "Hello Houston" des apprentissages</p>
+            </div>
+            <% end %>
+        </div>
+
+
+<%# BLOCK 2 => ÉCOLES %>
+        <div class="col-md-12 col-lg-4">
+            <%= link_to root_path, class: "box-link www", data: { turbolinks: false } , :action => 'go' do %>
+                <div class="box-home" > 
+                <div class="box-home-picto">
+                <%= image_tag("home-ecole-picto.png", class: "img-fluid img-motricite img-nature") %>
+                </div>
+                <p class="title-box-home">ÉCOLES</p>
+                    <p>Trouver l'école qui convient à votre enfant près de chez vous !</p>
+                </div>
+            <% end %>    
+        </div>
+    </div>
+</div>
+
+
+ <%= render 'shared/footer'  %>
